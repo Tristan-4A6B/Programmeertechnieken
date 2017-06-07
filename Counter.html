@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Counter</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        
+        <style>
+            html, body {
+                margin: 0;
+                padding: 0;
+                height: 100%;
+                width: 100%
+            }
+            #blok {
+                border: 1px solid;
+                height: 75px;
+            }
+            
+            #cirkel {
+                background-color: red;
+                color: white;
+                height: 12%;
+                width: 10%;
+                border-radius: 50%;
+                margin-left: 45%;
+                margin-top: 20%;
+                font-family: open sans light;
+                font-size: 18px;
+                text-align: center;
+                padding-top: 4%;
+                position: relative;
+                border: 2px solid white;
+                
+                
+            }
+            
+        </style>
+    </head>
+    <body>
+        <div id="cirkel">
+            <script>
+
+                var teller = 0;
+
+                function addUp() {
+                    teller = teller + 1;
+                    document.getElementById('cirkel').innerHTML = (teller);
+                    
+                    if(teller == 100){
+                        clearInterval(interval);
+                        document.body.style.background = "red";
+                    }
+                }
+                var interval = setInterval(addUp, 50);
+
+            </script>
+       </div>
+    </body>
+</html>
