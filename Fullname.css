@@ -1,0 +1,16 @@
+body { 
+    font-family: "Arial"; 
+}
+
+div { 
+    padding: 5px; 
+}
+
+label { 
+    DISPLay: inline-block; 
+    width:8em; 
+}
+
+#result-fullname {
+    FONT-WEIGHT: bold;
+}
